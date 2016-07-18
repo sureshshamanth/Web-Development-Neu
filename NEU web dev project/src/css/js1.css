@@ -1,0 +1,78 @@
+.square_green
+{
+    width: 100px;
+    height: 100px;
+    background-color: Green;
+    text-align: center;
+    color: Blue;
+    margin: auto;
+    }
+    
+    #resizable { width: 150px; height: 150px; padding: 0.5em;
+                 background-color: Blue; }
+   
+#drag_me
+{
+    width: 200px;
+    height: 150px;
+    background-image:url("../images/MyPics/bground.jpg");
+    color: Red;
+    margin: auto;
+    position:absolute;
+    margin: auto;
+    } 
+    
+    .toggle1
+    {
+        width: 200px;
+        height: 150px;
+        background-color: Yellow;
+        }
+        
+        .toggle2
+        {
+        width: 200px;
+        height: 150px;
+        background-color: Red;
+            }
+            
+             #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+             
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+  
+  
+  .per {
+    margin: 8px;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+  }
+  .ber {
+    text-decoration: underline;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  #division{ margin:10px;padding:12px;
+                 border:2px solid #666;
+                 width:60px;
+               }
+    
+    #resizable { width: 150px; height: 150px; padding: 0.5em; }
+    
+    
+   .toggler { width: 500px; height: 200px; position: auto; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 135px; padding: 0.4em; position: auto; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    
+    .prep
+    {
+        background-color: Yellow;}
+        
+        .appen
+    {
+        background-color: Lime;}

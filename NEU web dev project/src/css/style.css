@@ -1,0 +1,190 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.left
+{
+    float: left;
+    display: inline;
+}
+
+.right
+{
+    float: right;
+    display: inline;
+}
+
+body
+{
+    background: url('../../images/project/1.png');
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+}
+
+a img
+{
+    border: 0px;
+}
+
+a img:hover
+{
+    opacity: 0.5;
+}
+
+h1#header-left
+{
+    font-size: 0;
+    line-height: 0;
+    width: 156px;
+    height: 64px;
+    float: left;
+    
+}
+
+h1#header-left a
+{
+    display: block;
+    height: 64px;
+    text-indent: -4000px;
+    background: url('../../images/project/header-logo.gif');
+}
+
+.wrapper
+{
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+}
+
+#header
+{
+    height: 64px;
+    background: url('../../images/project/header.gif');
+    position: relative;
+}
+
+#navigation
+{
+    float: right;
+    white-space: nowrap;
+}
+
+#navigation ul
+{
+    list-style-type: none;
+    height: 64px;
+    font-weight: bold;
+    float: left;
+}
+
+#navigation ul li
+{
+    float: left;
+    display: inline;
+}
+
+#navigation ul li a
+{
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+}
+
+#navigation ul li a.active, #navigation ul li a:hover
+{
+    background: #fff;
+    color: #8b0000;
+}
+
+#header-right
+{
+    float: right;
+    width: 100px;
+    top: 0;
+    right: 0;
+    height: 51px;
+    background: #000;
+    color: #fff;
+    padding: 13px 10px 0 10px;
+    white-space: nowrap;
+    line-height: 20px;
+}
+
+#main
+{
+    background: #fff;
+}
+
+#footer
+{
+    height: 51px;
+    background: #ebebeb;
+    white-space: nowrap;
+    line-height: 50px;
+    padding: 0 15px;
+    color: #7b7b7b;
+    margin-top: 10px;
+}
+
+#footer a
+{
+    color: #7b7b7b;
+    text-decoration: none;
+}
+
+#footer a:hover
+{
+    color: #000;
+}
+
+#footer span
+{
+    padding: 0 2px;
+}
+
+.button_wrapper_top
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.button_wrapper_bottom
+{
+    padding-left: 10px;
+}
+
+.button
+{
+    padding: 5px;
+    width: 460px;
+    border: 1px solid #666;
+    text-decoration: none;
+    color: Black;
+    background: #ececec;
+}
+
+.button:hover
+{
+    border: solid 1px black;
+    color: Red;
+}
+
+.center
+{
+    text-align: center;
+}
+
+#intro
+{
+    padding:20px;
+    font-size:16px;
+}

@@ -1,0 +1,76 @@
+/*
+    File: feedback.css
+    ... style sheet for the FeedBack.aspx page
+    Copyright 2013,
+    Ramesh Nayak,
+    College of Computer and Information Science
+    Northeastern University, Boston, MA 02115
+    nayak.ram@husky.neu.edu
+*/
+
+#commentbox
+{
+    width: 600px;
+    -moz-box-shadow: 10px 10px 10px #666;
+    -webkit-box-shadow: 10px 10px 10px #666;
+    box-shadow: 8px 8px 10px #666;
+    margin: 15px;
+    padding: 15px;
+    background: #ececec;
+}
+
+#timestamp
+{
+    float: right;
+}
+
+#main_wrapper
+{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+a.pagerButton, a.pagerButton:visited
+{
+    border: solid 1px Black;
+    padding: 4px;
+    text-decoration: none;
+    color: Black;
+    background: #ececec;
+}
+
+a.pagerButton:hover
+{
+    border: solid 1px black;
+    color: Red;
+}
+
+input[type="submit"]
+{
+    border: solid 1px Black;
+    padding: 4px;
+    text-decoration: none;
+    color: Black;
+    background: #ececec;
+}
+
+input[type="submit"]:hover
+{
+    border: solid 1px black;
+    color: Red;
+}
+
+#LoginStatus1
+{
+    border: solid 1px Black;
+    padding: 4px;
+    text-decoration: none;
+    color: Black;
+    background: #ececec;
+}
+
+#LoginStatus1:hover
+{
+    border: solid 1px black;
+    color: Red;
+}

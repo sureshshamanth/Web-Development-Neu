@@ -1,0 +1,107 @@
+#wrapper
+{
+    margin: auto;
+    width: 75%;
+    background: Grey;
+    padding: 50px;
+    border: 3px solid red;
+    box-shadow: 7px 7px 7px black;
+    border: 2px inset red;
+}
+
+#header
+{
+    background-color: black;
+    padding: 1em;
+    margin-bottom: .5em;
+    text-align: center;
+    font: bold;
+    color: Grey;
+}
+
+#navigation
+{
+    background-color: transparent;
+    color: #eee;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+#navigation ul
+{
+    margin: 0;
+    padding: 3px;
+    float: left;
+}
+
+
+#navigation li
+{
+    display: inline;
+    
+}
+
+
+#navigation li a
+{
+    padding: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: silver;
+    float: left;
+    border-right: 1px solid silver;
+}
+
+#navigation li a:hover
+{
+   color:red;
+}
+
+
+#content
+{
+    padding: 2em 1em;
+}
+
+
+#main_para {
+   padding: 5px;
+   background: Maroon;
+   color: silver;
+   height:auto;
+   font-size: 13px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.stitched {
+   padding: 10px;
+   margin: 5px;
+   background: silver;
+   font-size: 15px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px inset black;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #aa3030;
+   font-weight: normal;
+}
+
+.contact_img
+{
+    width:25px;
+    height:25px;
+}
+
+#link
+{
+    color: red}
+    
+#test
+{ 
+    background: Yellow;
+    }
+    

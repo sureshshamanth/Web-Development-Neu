@@ -1,0 +1,178 @@
+html { 
+  padding:0px;
+  margin:0px;
+  height: 100%;
+}
+
+body {
+  background-color: #e1ddd9;
+  font-size: 12px;
+  font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+  color:#564b47;   
+  padding:0px;
+  margin:0px;
+  height: 100%;
+}
+
+#wrapper { 
+    margin: 0 auto;
+    width: 1200px;
+         }
+
+#header {
+ width: auto;
+ padding: 10px;
+ color: #74C2E1;
+ height: auto;
+ background-color: #005B9A;
+ text-align: center;
+ font-size: xx-large;
+ border:2px solid #74C2E1;
+ }
+
+#content {
+ background-color:#74C2E1;
+ height: auto;
+ width: 800px;
+ float: left;
+}
+
+#left {
+width: 200px;
+float:left; 
+background-color: #005B9A;
+}
+
+#right {
+width:200px; 
+float:right;
+background-color: #005B9A;
+}
+
+#navigation
+{
+    background: #005B9A;
+    color: #74C2E1;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#navigation ul
+{
+    margin: 0;
+    padding: 3px;
+    float: left;
+    color: #74C2E1;
+}
+
+
+#navigation li
+{
+    display: inline;
+    color: #74C2E1;
+}
+
+
+#navigation li a
+{
+    padding: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #74C2E1;
+    float: left;
+    border-right: 2px solid #74C2E1;
+}
+
+#navigation li a:hover
+{
+   color:red;
+}
+
+#footer { 
+    width: auto;
+    clear: both;
+    color: #333;
+    border:2px solid #74C2E1;
+    background: #005B9A;
+    padding: 10px;
+    color: #74C2E1;
+   }
+   
+#img-grp-wrap {
+    width: 520px;
+    height: 520px;
+}
+
+.img-wrap {
+    position: relative;
+    border: 1px solid #CCC;
+    background-color: Green;
+}
+
+.img-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: Orange;
+}
+
+.next, .prev {
+    position: absolute;
+    cursor: pointer;
+    top: 250px;
+}
+
+.next {
+    right: -8px;
+}
+
+.prev {
+    left: -8px;
+}
+    
+#panel 
+    {
+    float: left;
+    height: auto;
+    background-color: #005B9A;
+    padding: 5px;
+    border-right:2px solid #74C2E1;
+    border-bottom:2px solid #74C2E1;
+    border-left:2px solid #74C2E1;
+    color: #74C2E1;
+    }
+    
+#ContactInfo
+{
+    padding: 5px;
+    border:2px solid 74C2E1;
+    color: #74C2E1;
+    border-right:2px solid #74C2E1;
+    border-bottom:2px solid #74C2E1;
+    border-left:2px solid #74C2E1;
+    }
+      
+#ParkingPanel 
+    {
+    float: left;
+    height: auto;
+    width: 386px;
+    padding: 5px;
+    background-color: #005B9A;
+    border:2px solid #74C2E1;
+    color: #74C2E1;
+    }
+    
+#MuseumTimings 
+    {
+    float: right;
+    height: auto;
+    width: 386px;
+    padding: 5px;
+    background-color: #005B9A;
+    border-right:2px solid #74C2E1;
+    border-top:2px solid #74C2E1;
+    border-left:2px solid #74C2E1;
+    color: #74C2E1;
+    }

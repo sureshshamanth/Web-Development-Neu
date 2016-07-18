@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museum HomePage</title>
+    <link href="css/boots.css" rel="stylesheet">
+    <link href="css/new1.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/spacelab/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body
+        {
+            height: 100%;
+        }
+    </style>
+</head>
+    
+  <body style="">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="page-header">
+                    <h1>
+                        Brooklyn Museum <small>New York</small></h1>
+                </div>
+
+
+  <!-- Responsove nav bar -->
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="ProjectHomeBootstrap.htm">
+            <img src="images/BMLogo1.png" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="ProjectHomeBootstrap.htm">Home</a></li>
+            <li><a href="ProjectMaps.htm">Visit</a></li>
+            <li><a href="ProjectSearchPage.htm">Search</a></li>
+            <li><a>Feedback</a></li>
+            <li><a href="ProjectTickets.htm">Tickets</a></li>
+        </ul>
+        </li> </ul>
+    </div>
+        <!--/.nav-collapse -->
+      </div>
+                <!-- Nav bar ends here -->
+
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div id="myCarousel" class="carousel slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                    <img alt="" src="images/NewMuseum.jpg" style="height: 360px; width: 660px" /></div>
+                                <div class="item">
+                                    <img alt="" src="images/NewMuseum1.jpg" style="height: 360px; width: 660px" /></div>
+                                <div class="item">
+                                    <img alt="" src="images/NewMuseum3.jpg" style="height: 360px; width: 660px" /></div>
+                            </div>
+                            <!-- Carousel nav -->
+                            <!-- <a class="carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <a class="twitter-timeline" href="https://twitter.com/brooklynmuseum" data-widget-id="408674632611282944">
+                            Tweets by @brooklynmuseum</a>
+                        <script>                            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7" id="widgetmain" style="text-align: left; overflow-y: auto;
+                        overflow-x: hidden;">
+                        <div id="rsswidget" style="height: 400px;">
+                            <iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1386303147169&amp;x=http%3A%2F%2Ftopics.nytimes.com%2Ftop%2Freference%2Ftimestopics%2Forganizations%2Fb%2Fbrooklyn_museum%2Findex.html%3Frss%3D1&amp;w=660&amp;h=400&amp;bc=333333&amp;bw=1&amp;bgc=4099FF&amp;m=5&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12"
+                                border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0"
+                                style="border: 0; padding: 0; margin: 0; width: 660px; height: 400px;" id="rssOutput">
+                                Reading RSS Feed ...</iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Museum timings</div>
+                            <div class="panel-body">
+                                <div id="MuseumTimings">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 4000
+            })
+
+        var ide = 0;
+        $.getJSON("http://query.yahooapis.com/v1/public/yql",
+  {
+      q: "select * from json where url=\"http://www.brooklynmuseum.org/opencollection/api/?version=1&format=json&include_html_style_block=true&method=visit.getHours&api_key=mS3nIn2Ltx\"",
+      format: "json"
+  },
+  function (data) {
+      if (data) {
+          while (ide < 7) {
+              if (data.query.results.response.hours[ide].status == 'open') {
+                  $("#MuseumTimings").append('<h4>' + data.query.results.response.hours[ide].name + '</h4>');
+                  $("#MuseumTimings").append(data.query.results.response.hours[ide].status + ' From: ');
+                  $("#MuseumTimings").append(data.query.results.response.hours[ide].start + ':00 to ');
+                  $("#MuseumTimings").append(data.query.results.response.hours[ide].end + ':00' + '\n');
+                  ide = ide + 1;
+              }
+              else {
+                  $("#MuseumTimings").append('<h4>' + data.query.results.response.hours[ide].name + '</h4>');
+                  $("#MuseumTimings").append(data.query.results.response.hours[ide].status + '\n');
+                  ide = ide + 1;
+              }
+          }
+      }
+      else {
+          alert('Failed ');
+      }
+  }
+);
+
+});
+</script>
+  </body>
+</html>
